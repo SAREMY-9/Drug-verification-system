@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+
+    <title>Drug verification system</title>
+</head>
+<body>
+    
+
+     <div class="header">
+        <div class="container">
+            <div class="nav-bar">               
+            <div class="Welcome">
+
+               <h2>MUHDVS</h2>
+
+           </div>
+
+
+     
+
+        <nav>
+         <ul>
+
+
+       
+            <li><a href="index.html">Home</a></li>
+            <li><a href="accounts.html">Admin Panel</a></li>
+            <li><a href="accounts.html">User Panel</a></li>
+            <li><a href="index.html">Faqs</a></li>
+         
+
+
+    </ul>
+
+   </nav>
+  
+        
+
+        </div>
+     </div>
+
+<!---------end of header-->
+
+
+
+<!---------start of  admin and verification --------->
+
+ 
+
+<div class="form-page">
+   
+        <div class="row">
+
+           
+            <div class="col-2">
+                                                                                                                                                            
+
+                <div class="form-container">
+                    <div class="form-btn">
+
+                        <span onclick="admin()">Admin</span>
+                        <span onclick="login()">User</span>
+                        
+                        <hr id="Indicator">
+                    </div>
+
+
+
+                    <!--------admin------->
+                    <form id="RegForm"   action="adminlogin.php"  method="POST">
+
+
+                        <input type="text" placeholder="Admin name" name="admin-name" required  >
+                        <input type="email" placeholder="Email / Id" name="email" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <button type="submit" class="btn-2"  id="btn-reg"  name="submit">Login</button>
+                        <br>  
+                        <a href="">Forgot Password?</a>
+
+
+                        
+                    </form>
+
+
+                    
+                    <!---user-->
+
+                    <form id="LogForm"  action="userslogin.php"   method="POST">         
+
+                        <input type="text" placeholder="User-name"   name="username" required>
+
+                        <input type="password" placeholder="Password"  name="password" required>
+                      
+                        <button type="submit " class="btn-2"  id="btn-reg"  name="submit">Login</button>
+                       <br>
+                        <a href=" ">Forgot Password?</a>
+                        
+
+                    </form>
+
+
+                    
+
+
+                </div>
+
+            </div>
+
+
+            <div class="col-2">
+        
+
+                <img src="images/drug 9.png">
+            
+            </div>
+        </div>
+    
+    
+
+         <!---------of  admin and verification --------->
+
+
+           <script src="response.js"> 
+
+ 
+
+
+             </script>
+
+   
+
+</body>
+</html>
